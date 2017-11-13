@@ -2,7 +2,7 @@
   "name": "@microdrop/ui-plugin",
   "version": "0.1.0",
   "description": "Parent class of microdrop ui plugins",
-  "main": "build/ui-plugin.js",
+  "main": "src/ui-plugin.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "./node_modules/.bin/webpack",
