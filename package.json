@@ -1,0 +1,33 @@
+{
+  "name": "@microdrop/ui-plugin",
+  "version": "0.0.1",
+  "description": "Parent class of microdrop ui plugins",
+  "main": "build/ui-plugin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/webpack",
+    "git-add": "git add package-lock.json && git add -p ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lucaszw/ui-plugin.git"
+  },
+  "keywords": [
+    "Microdrop",
+    "UI",
+    "Plugin"
+  ],
+  "author": "Sci-Bots",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/Lucaszw/ui-plugin/issues"
+  },
+  "homepage": "https://github.com/Lucaszw/ui-plugin#readme",
+  "devDependencies": {
+    "webpack": "^3.8.1"
+  },
+  "dependencies": {
+    "@mqttclient/web": "^0.1.3",
+    "keyboard-shortcut": "^1.2.0"
+  }
+}
