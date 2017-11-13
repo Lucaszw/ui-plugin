@@ -1,5 +1,5 @@
 const Key = require('keyboard-shortcut');
-const MqttClient = require('@mqttclient/web');
+const MQTTClient = require('@mqttclient/web');
 
 if (!window.microdropPlugins)
   window.microdropPlugins = new Map();
