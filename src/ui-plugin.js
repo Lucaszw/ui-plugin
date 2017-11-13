@@ -77,3 +77,5 @@ class UIPlugin extends MQTTClient {
   }
 
 };
+
+module.exports = UIPlugin;
