@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "./node_modules/.bin/webpack",
-    "update-deps": "ncu -u @microdrop/async @microdrop/device-controller @microdrop/ui-plugin && npm install",
+    "update-deps": "ncu -ua @microdrop/async @microdrop/device-controller @microdrop/ui-plugin && npm install",
     "git-add": "git add package-lock.json && git add -p . && git commit",
     "publish-pkg": "npm run build && npm version patch && npm publish && git push origin master"
   },
