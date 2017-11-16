@@ -6,7 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "./node_modules/.bin/webpack",
-    "update-deps": "ncu -ua @microdrop/async @microdrop/device-controller @microdrop/ui-plugin && npm install",
+    "build-dev": "npm run --prefx ../mqtt-client web && npm run build",
+    "dev-mode": "npm uninstall @mqttclient/web && npm i ../mqttclient-web",
+    "prod-mode": "npm uninstall @mqttclient/web && npm i @mqttclient/web",
+    "update-deps": "ncu -ua @mqttclient/web && npm install",
     "git-add": "git add package-lock.json && git add -p . && git commit",
     "publish-pkg": "npm run build && npm version patch && npm publish && git push origin master"
   },
@@ -29,7 +32,7 @@
     "webpack": "^3.8.1"
   },
   "dependencies": {
-    "@mqttclient/web": "^0.1.5",
+    "@mqttclient/web": "file:../mqttclient-web",
     "keyboard-shortcut": "^1.2.0"
   }
 }
