@@ -32,7 +32,7 @@
     "webpack": "^3.8.1"
   },
   "dependencies": {
-    "@mqttclient/web": "file:../mqttclient-web",
+    "@mqttclient/web": "^0.1.5",
     "keyboard-shortcut": "^1.2.0"
   }
 }
