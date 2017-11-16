@@ -11,7 +11,7 @@
     "prod-mode": "npm uninstall @mqttclient/web && npm i @mqttclient/web",
     "update-deps": "ncu -ua @mqttclient/web && npm install",
     "git-add": "git add package-lock.json && git add -p . && git commit",
-    "publish-pkg": "npm run build && npm version patch && npm publish && git push origin master"
+    "publish-pkg": "npm run prod-mode && npm run build && npm version patch && npm publish && git push origin master"
   },
   "repository": {
     "type": "git",
